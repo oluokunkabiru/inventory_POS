@@ -8,7 +8,7 @@
 	<div>
 	<?php
 		$inc=4;
-		$query=mysqli_query($conn,"select * from product");
+		$query=mysqli_query($conn,"select * from product order by rand()");
 		while($row=mysqli_fetch_array($query)){
 
 			$inc = ($inc == 4) ? 1 : $inc+1;
