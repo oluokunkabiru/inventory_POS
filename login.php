@@ -36,7 +36,7 @@
 				$_SESSION['id']=$row['userid'];
 				?>
 				<script>
-					window.alert('Login Success, Welcome Admin!');
+					// window.alert('Login Success, Welcome Admin!');
 					window.location.href='admin/';
 				</script>
 				<?php
@@ -45,7 +45,7 @@
 				$_SESSION['id']=$row['userid'];
 				?>
 				<script>
-					window.alert('Login Success, Welcome User!');
+					// window.alert('Login Success, Welcome User!');
 					window.location.href='user/';
 				</script>
 				<?php
@@ -54,7 +54,7 @@
 				$_SESSION['id']=$row['userid'];
 				?>
 				<script>
-					window.alert('Login Success, Welcome Supplier!');
+					// window.alert('Login Success, Welcome Supplier!');
 					window.location.href='supplier/';
 				</script>
 				<?php

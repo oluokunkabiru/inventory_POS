@@ -9,13 +9,13 @@
                 <div class="modal-body">
 				<?php
 					$sales=mysqli_query($conn,"select * from sales left join customer on customer.userid=sales.userid where salesid='".$sqrow['salesid']."'");
-					$srow=mysqli_fetch_array($sales);
+					$salerow=mysqli_fetch_array($sales);
 				?>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-12">
-							<span>Customer: <strong><?php echo ucwords($srow['customer_name']); ?></strong></span>
-							<span class="pull-right">Date: <strong><?php echo date("F d, Y", strtotime($srow['sales_date'])); ?></strong></span>
+							<span>Customer: <strong><?php echo ucwords($salerow['customer_name']); ?></strong></span>
+							<span class="pull-right">Date: <strong><?php echo date("F d, Y", strtotime($salerow['sales_date'])); ?></strong></span>
 						</div>
 					</div>
 					<div style="height:10px;"></div>

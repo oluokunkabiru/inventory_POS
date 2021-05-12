@@ -4,11 +4,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Logging out...</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Logging out...</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h5><center>Username: <strong><?php echo $user; ?></strong></center></h5> 
+					<h5><div class="text-center">Username: <strong><?php echo $user; ?></strong></div></h5> 
                 </div> 
 				</div>
                 <div class="modal-footer">
@@ -25,11 +25,16 @@
 
 <!-- My Account -->
     <div class="modal fade" id="account" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <?php
+		// $cq=mysqli_query($conn,"select * from customer left join `user` on user.userid=customer.userid where customer.userid='".$_SESSION['id']."'");
+		// $row=mysqli_fetch_array($cq);
+        print_r($row);
+	?>
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<center><h4 class="modal-title" id="myModalLabel">My Account</h4></center>
+					<div class="text-center"><h4 class="modal-title" id="myModalLabel">My Account</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -76,7 +81,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Edit Profile</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Edit Profile</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">

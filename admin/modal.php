@@ -4,11 +4,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Logging out...</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Logging out...</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h5><center>Username: <strong><?php echo $user; ?></strong></center></h5> 
+					<h5><div class="text-center">Username: <strong><?php echo $user; ?></strong></div></h5> 
                 </div> 
 				</div>
                 <div class="modal-footer">
@@ -29,7 +29,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<center><h4 class="modal-title" id="myModalLabel">My Account</h4></center>
+					<div class="text-center"><h4 class="modal-title" id="myModalLabel">My Account</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">

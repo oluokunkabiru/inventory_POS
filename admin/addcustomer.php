@@ -11,10 +11,10 @@
 	$userid=mysqli_insert_id($conn);
 	
 	mysqli_query($conn,"insert into customer (userid, customer_name, address, contact) values ('$userid', '$name', '$address', '$contact')");
-	
+	$_SESSION['success']="New Customer added successfully";
 	?>
 		<script>
-			window.alert('Customer added successfully!');
+			// window.alert('Customer added successfully!');
 			window.history.back();
 		</script>
 	<?php

@@ -17,6 +17,16 @@
     </div>
     <div class="row">
         <div class="col-lg-12">
+		<?php 
+		if(isset($_SESSION['success'])){
+		?>
+		 <div class="alert alert-success alert-dismissible fade show">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Success! </strong> <?php echo $_SESSION['success'] ?>
+		</div>
+		<?php }
+		unset($_SESSION['success']);
+		?>
             <table width="100%" class="table table-striped table-bordered table-hover" id="cusTable">
                 <thead>
                     <tr>
