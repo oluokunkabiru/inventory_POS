@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Delete Supplier</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Delete Supplier</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -12,7 +12,7 @@
 						$a=mysqli_query($conn,"select * from supplier where userid='".$sqrow['userid']."'");
 						$b=mysqli_fetch_array($a);
 					?>
-                    <h5><center>Company Name: <strong><?php echo ucwords($b['company_name']); ?></strong></center></h5>
+                    <h5><div class="text-center">Company Name: <strong><?php echo ucwords($b['company_name']); ?></strong></div></h5>
 					<form role="form" method="POST" action="deletesupplier.php<?php echo '?id='.$sqrow['userid']; ?>">
                 </div>                 
 				</div>
@@ -32,7 +32,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Edit Supplier</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Edit Supplier</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">

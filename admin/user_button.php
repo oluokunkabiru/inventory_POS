@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Delete Customer</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Delete Customer</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -12,7 +12,7 @@
 						$a=mysqli_query($conn,"select * from customer where userid='".$cqrow['userid']."'");
 						$b=mysqli_fetch_array($a);
 					?>
-                    <h5><center>Customer Name: <strong><?php echo ucwords($b['customer_name']); ?></strong></center></h5>
+                    <h5><div class="text-center">Customer Name: <strong><?php echo ucwords($b['customer_name']); ?></strong></div></h5>
 					<form role="form" method="POST" action="deletecustomer.php<?php echo '?id='.$cqrow['userid']; ?>">
                 </div>                 
 				</div>
@@ -32,7 +32,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Edit Customer</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Edit Customer</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">

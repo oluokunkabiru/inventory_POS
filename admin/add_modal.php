@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Add New Product</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Add New Product</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -72,7 +72,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Add New Customer</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Add New Customer</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -118,7 +118,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Add New Supplier</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Add New Supplier</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">

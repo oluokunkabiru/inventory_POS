@@ -34,7 +34,7 @@
 	
 	?>
 		<script>
-			window.alert('Product added successfully!');
+			// window.alert('Product added successfully!');
 			window.history.back();
 		</script>
 	<?php

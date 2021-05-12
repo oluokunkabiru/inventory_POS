@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Delete Product</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Delete Product</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -12,7 +12,7 @@
 						$a=mysqli_query($conn,"select * from product where productid='$pid'");
 						$b=mysqli_fetch_array($a);
 					?>
-                    <h5><center>Product Name: <strong><?php echo $b['product_name']; ?></strong></center></h5>
+                    <h5><div class="text-center">Product Name: <strong><?php echo $b['product_name']; ?></strong></div></h5>
 					<form role="form" method="POST" action="deleteproduct.php<?php echo '?id='.$pid; ?>">
                 </div>                 
 				</div>
@@ -32,7 +32,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Edit Product</h4></center>
+                    <div class="text-center"><h4 class="modal-title" id="myModalLabel">Edit Product</h4></div>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -68,9 +68,9 @@
 								<option value="<?php echo $b['supplierid']?>"><?php echo $b['company_name']; ?></option>
 								<?php
 									$s=mysqli_query($conn,"select * from supplier where userid != '".$b['supplierid']."'");
-									while($srow=mysqli_fetch_array($s)){
+									while($salerow=mysqli_fetch_array($s)){
 										?>
-											<option value="<?php echo $srow['userid']; ?>"><?php echo $srow['company_name']; ?></option>
+											<option value="<?php echo $salerow['userid']; ?>"><?php echo $salerow['company_name']; ?></option>
 										<?php
 									}
 								?>
