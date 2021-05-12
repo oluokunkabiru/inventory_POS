@@ -9,12 +9,12 @@
                 <div class="modal-body">
 				<?php
 					$sales=mysqli_query($conn,"select * from sales where salesid='".$hrow['salesid']."'");
-					$srow=mysqli_fetch_array($sales);
+					$salerow=mysqli_fetch_array($sales);
 				?>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-12">
-							<p class="pull-right">Date: <?php echo date("F d, Y", strtotime($srow['sales_date'])); ?></p>
+							<p class="pull-right">Date: <?php echo date("F d, Y", strtotime($salerow['sales_date'])); ?></p>
 						</div>
 					</div>
 					<div class="row">

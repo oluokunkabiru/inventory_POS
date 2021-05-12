@@ -26,9 +26,9 @@
 <!-- My Account -->
     <div class="modal fade" id="account" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <?php
-		// $cq=mysqli_query($conn,"select * from customer left join `user` on user.userid=customer.userid where customer.userid='".$_SESSION['id']."'");
-		// $row=mysqli_fetch_array($cq);
-        print_r($row);
+		$cq=mysqli_query($conn,"select * from customer left join `user` on user.userid=customer.userid where customer.userid='".$_SESSION['id']."'");
+		$row=mysqli_fetch_array($cq);
+        
 	?>
         <div class="modal-dialog">
             <div class="modal-content">
